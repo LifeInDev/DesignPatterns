@@ -9,16 +9,36 @@ namespace ObserverPattern
     {
         static void Main(string[] args)
         {
-            // Configure Observer pattern
-            ConcreteSubject s = new ConcreteSubject();
+            string x = Console.ReadLine();
 
-            s.Attach(new ConcreteObserver(s, "X"));
-            s.Attach(new ConcreteObserver(s, "Y"));
-            s.Attach(new ConcreteObserver(s, "Z"));
+            if (x == "1")
+            {
 
-            // Change subject and notify observers
-            s.SubjectState = "ABC";
-            s.Notify();
+                // Configure Observer pattern
+                ConcreteSubject s = new ConcreteSubject();
+
+                s.Attach(new ConcreteObserver(s, "X"));
+                s.Attach(new ConcreteObserver(s, "Y"));
+                s.Attach(new ConcreteObserver(s, "Z"));
+
+                // Change subject and notify observers
+                s.SubjectState = "ABC";
+                s.Notify();
+            }
+            else
+            {
+                // Create IBM stock and attach investors
+                IBM ibm = new IBM("IBM", 120.00);
+                ibm.Attach(new Investor("Sorros"));
+                ibm.Attach(new Investor("Berkshire"));                
+
+                // Fluctuating prices will notify investors
+                ibm.Price = 120.10;
+                ibm.Price = 121.00;
+                ibm.Price = 120.50;
+                ibm.Price = 120.75;                
+            }
+
 
             // Wait for user
             Console.ReadKey();
