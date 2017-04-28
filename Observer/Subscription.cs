@@ -50,7 +50,9 @@ namespace ObserverPattern
     {
         private string _subsState;
         public string CancelAllSubs
-        { get { return _subsState; } set { _subsState = value; } }
+        { get { return _subsState; } set { _subsState = value;
+                Notify();
+            } }
     }    
 
     interface ISubscription

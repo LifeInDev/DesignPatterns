@@ -38,7 +38,7 @@ namespace Observer
         private void btnCancelAllSubscription_Click(object sender, EventArgs e)
         {
             psubs.CancelAllSubs = "Pasif";
-            psubs.Notify();
+            //psubs.Notify();
             FillList();
         }
     }
