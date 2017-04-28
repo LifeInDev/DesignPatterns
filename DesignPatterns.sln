@@ -1,7 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{9FDF0C34-9DFF-4853-9BA8-1A3D8F25A3F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{6C30A4A4-0B17-4F03-AD34-3E87EE806AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{08723BC2-63D5-4734-A85D-03008BF93187}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +19,14 @@ Global
 		{9FDF0C34-9DFF-4853-9BA8-1A3D8F25A3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FDF0C34-9DFF-4853-9BA8-1A3D8F25A3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FDF0C34-9DFF-4853-9BA8-1A3D8F25A3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C30A4A4-0B17-4F03-AD34-3E87EE806AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C30A4A4-0B17-4F03-AD34-3E87EE806AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C30A4A4-0B17-4F03-AD34-3E87EE806AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C30A4A4-0B17-4F03-AD34-3E87EE806AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08723BC2-63D5-4734-A85D-03008BF93187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08723BC2-63D5-4734-A85D-03008BF93187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08723BC2-63D5-4734-A85D-03008BF93187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08723BC2-63D5-4734-A85D-03008BF93187}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
