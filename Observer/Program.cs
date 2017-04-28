@@ -14,7 +14,7 @@ namespace ObserverPattern
         {
             Application.EnableVisualStyles();
             Application.Run(new Form1());
-            
+            //test
                 //PersonSubscription psubs = new PersonSubscription();
 
                 //psubs.AddSubscription(new Subscriber(psubs,"Müslüm", "Kişi", "1"));
