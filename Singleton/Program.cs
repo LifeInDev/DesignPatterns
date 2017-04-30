@@ -9,7 +9,7 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
-            Calculate.Instance.ValueOne = 10.65;
+            Calculate.Instance.ValueOne = 10.5;
             Calculate.Instance.ValueTwo = 5.5;
             Console.WriteLine("Addition : " + Calculate.Instance.Addition());
             Console.WriteLine("Subtraction : " + Calculate.Instance.Subtraction());
